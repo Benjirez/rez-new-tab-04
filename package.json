@@ -2,10 +2,9 @@
   "name": "rez_w7",
   "version": "1.0.0",
   "description": "",
-  "main": "./box16/app2.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "benjirez@gmail.com",
@@ -18,8 +17,5 @@
     "mongoose": "^5.3.13",
     "mousetrap": "^1.6.2",
     "regexp-clone": "0.0.1"
-  },
-  "devDependencies": {
-    "electron": "^4.1.0"
   }
 }
