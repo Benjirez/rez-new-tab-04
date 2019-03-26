@@ -1,6 +1,6 @@
 const express = require('express');
-//const path = require('path');
-//const PORT = process.env.PORT || 5000;
+const path = require('path');
+const PORT = process.env.PORT || 5000;
 var controller1 = require('./controllers/controller1');
 var xsvr = express();
 
@@ -14,6 +14,6 @@ xsvr.use( express.static('./') ); //no specific route specified... thus, all req
 controller1( xsvr ); //passing it the express server
 
 //listen to port
-xsvr.listen(3000);
+xsvr.listen( PORT );
 //xsvr.listen(PORT, () => console.log(`Listening on ${ PORT }`))
-console.log(__dirname.slice(-5) + ' xsvr listening on 3000');
+console.log(__dirname.slice(-5) + ' xsvr listening on 5000');
