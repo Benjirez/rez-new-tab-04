@@ -1,9 +1,6 @@
-
 body{
 
-    //background: #0d1521;
-
-	//background-image: url("thunderbirdWrite2.png");
+  
 	background-color: #0d1521;
 	background-repeat: no-repeat;
     font-family: arial;
@@ -27,7 +24,6 @@ body{
 #labelSel{
 
 	text-align: left;
-	//margin: auto;
 	height:20px;
 	width: 322px;
 	display: inline-block;
@@ -65,7 +61,7 @@ body{
 }
 
 #labelTitle{
-	//margin: auto;
+
 	text-align: left;
 	display: inline-block;
 }
@@ -73,10 +69,10 @@ body{
 #myTitle{
 
 	width: 320px;
-	//height: 20px;
+
 	margin-bottom: 4px;
 	font-family: arial;
-	//display: inline-block;
+
 }
 
 #myHKDiv{
@@ -88,7 +84,7 @@ body{
 }
 
 #labelHK{
-	//margin: auto;
+
 	text-align: left;
 	display: inline-block;
 }
@@ -96,14 +92,14 @@ body{
 #myHK{
 
 	width: 100px;
-	//height: 20px;
+
 	margin-bottom: 4px;
 	font-family: arial;
-	//display: inline-block;
+
 }
 
 #labelMisc{
-	//margin: auto;
+
 	text-align: left;
 	display: inline-block;
 }
@@ -134,8 +130,7 @@ body{
 	width: 280px;
 	height: 68px;
 	background-color: #eeeccc;
-	//vertical-align: top;
-	//margin-right: 2px;
+
 	margin-bottom: 6px;
 	font-family: arial;
 }
@@ -144,7 +139,7 @@ div.panelBtn{
 	display: inline-block;
 	margin-right: 20px;
 	width: 100px;
-	//padding-right: 10px;
+
 }
 
 
