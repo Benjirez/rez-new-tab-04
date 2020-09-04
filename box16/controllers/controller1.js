@@ -204,7 +204,7 @@ module.exports = function(xsvr){
 				//console.log('into the shoot flyboy');
 
 				xsvr.locals.myData = data;
-				res.render('view_Wig1', { todos: data, todos2: data2 });
+				res.render('view_wig1', { todos: data, todos2: data2 });
 
 			});
 
