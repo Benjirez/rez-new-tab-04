@@ -1,7 +1,11 @@
-var dbcreds = require('../../dbcreds');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extend: false});
+
+// dbu and dbpw must be defined as heroku config var
+var dbcreds = {};
+dbcreds.user = process.env.dbu;
+dbcreds.pw = process.env.dbpw;
 
 //var Mousetrap = require('mousetrap');
 //var copy = require('clipboard-copy');
@@ -22,7 +26,7 @@ var model3 = mongoose.model('quicktext3', mongoose.Schema({title:[], texts: [tex
 
 var model0 = mongoose.model('schematest', mongoose.Schema( {a1: []} ) );
 
-var model_x1 = mongoose.model('model_x1s', mongoose.Schema({
+var model_x1 = mongoose.model('new_tab_01', mongoose.Schema({
 		col_a: String, col_b: String, col_c: String, col_d: String, col_e: String,
 		col_f: String, col_g: String, col_h: String, col_i: String, col_j: String
 	}) );
