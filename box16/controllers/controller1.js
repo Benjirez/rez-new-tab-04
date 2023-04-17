@@ -26,7 +26,7 @@ var model3 = mongoose.model('quicktext3', mongoose.Schema({title:[], texts: [tex
 
 var model0 = mongoose.model('schematest', mongoose.Schema( {a1: []} ) );
 
-var model_x1 = mongoose.model('new_tab_01', mongoose.Schema({
+var model_x1 = mongoose.model('new_tab_03', mongoose.Schema({
 		col_a: String, col_b: String, col_c: String, col_d: String, col_e: String,
 		col_f: String, col_g: String, col_h: String, col_i: String, col_j: String
 	}) );
