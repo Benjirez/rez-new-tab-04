@@ -1,7 +1,0 @@
-{
-  "name": "rez-new-tab-2022-01",
-  "description": "Rez New Tab App",
-  "repository": "https://git.heroku.com/rez-new-tab-2022-01.git",
-  "keywords": ["node", "express", "heroku"],
-  "image": "Rez New Tab Image"
-}
