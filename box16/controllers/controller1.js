@@ -36,11 +36,12 @@ var model_x1 = mongoose.model(
 module.exports = function (xsvr) {
   // x1
   xsvr.get("/x1", function (req, res) {
-    var data = model_x1.find({}, function (err, data) {
-      if (err) throw err;
+    //var data = model_x1.find({}, function (err, data) {
+     // if (err) throw err;
       //console.log('into the shoot flyboy');
       //xsvr.locals.myData = data;
-      res.render("view_x1", { data: data });
+      res.send("mad poo");
+      //res.render("view_x1", { data: data });
     });
   });
 
