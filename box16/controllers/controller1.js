@@ -37,13 +37,13 @@ module.exports = function (xsvr) {
   // x1
   xsvr.get("/x1", function (req, res) {
     //var data = model_x1.find({}, function (err, data) {
-     // if (err) throw err;
-      //console.log('into the shoot flyboy');
-      //xsvr.locals.myData = data;
-      res.send("mad poo");
-      //res.render("view_x1", { data: data });
-    });
+    // if (err) throw err;
+    //console.log('into the shoot flyboy');
+    //xsvr.locals.myData = data;
+    res.send("mad poo");
+    //res.render("view_x1", { data: data });
   });
+  //});
 
   //create new todoModel with data from req.body, push to db, reload view
   xsvr.post("/x1", urlencodedParser, function (req, res) {
