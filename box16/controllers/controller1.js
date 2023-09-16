@@ -31,7 +31,7 @@ var model_x1 = mongoose.model(
   })
 );
 
-var textOut2 = "";
+//var textOut2 = "";
 
 module.exports = function (xsvr) {
   // x1
@@ -53,6 +53,7 @@ module.exports = function (xsvr) {
     });
   });
 
+  /*
   xsvr.delete("/x1:item", function (req, res) {
     //delete requested item from db
     var myItem = { item: req.params.item };
@@ -64,33 +65,9 @@ module.exports = function (xsvr) {
       //});
     });
   });
+*/
 
-  // get todo data and render view
   xsvr.get("/", function (req, res) {
-    var data = model1.find({}, function (err, data) {
-      res.send("SUP");
-    });
+    res.send("SUP");
   });
-
-  //create new todoModel with data from req.body, push to db, reload view
-  xsvr.post("/", urlencodedParser, function (req, res) {
-    res.send("SUPpost");
-  });
-
-  /*
-  xsvr.delete("/:item", function (req, res) {
-    //delete requested item from db
-    var myItem = { item: req.params.item };
-    console.log(myItem);
-    model1.find({ _id: myItem.item }).remove(function (err, data) {
-      if (err) throw err;
-      console.log(myItem.item + " " + data);
-      model2.find({ _id: myItem.item }).remove(function (err, data) {
-        if (err) throw err;
-        res.json(data);
-        console.log(myItem.item + " " + data);
-      });
-    });
-  });
-  */
 };
