@@ -56,7 +56,6 @@ module.exports = function (xsvr) {
     });
   });
 
-  /*
   xsvr.delete("/x1:item", function (req, res) {
     //delete requested item from db
     var myItem = { item: req.params.item };
@@ -68,7 +67,6 @@ module.exports = function (xsvr) {
       //});
     });
   });
-*/
 
   xsvr.get("/", function (req, res) {
     res.send("SUP");
