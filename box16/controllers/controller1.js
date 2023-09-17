@@ -40,8 +40,9 @@ module.exports = function (xsvr) {
     // if (err) throw err;
     //console.log('into the shoot flyboy');
     //xsvr.locals.myData = data;
-    res.send("mad poo");
+    //res.send("mad poo");
     //res.render("view_x1", { data: data });
+    res.render("junk");
   });
   //});
 
