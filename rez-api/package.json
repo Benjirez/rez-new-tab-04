@@ -4,7 +4,7 @@
   "description": "",
   "main": "server-api.js",
   "scripts": {
-    "start": "node server-api.js"
+    "dev": "nodemon server-api.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
-    "nodemon": "^3.1.0",
-    "sirv": "^2.0.4"
+    "nodemon": "^3.1.0"
   }
 }
