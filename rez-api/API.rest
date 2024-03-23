@@ -1,0 +1,18 @@
+###GET all
+GET http://localhost:3000/user
+
+### DELETE/id
+DELETE http://localhost:3000/user/65e3aae2c24f940a280c4d96
+
+###
+GET http://localhost:3000/user/69
+
+### CREATE
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{"a": "homie", "b": "play", "c": "dat", "d": [1,2,3]}
+
+###
+PATCH http://localhost:3000/user/42
+

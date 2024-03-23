@@ -1,0 +1,23 @@
+BUILD NOTES
+npm init -y
+npm i express mongoose
+npm i -D nodemon dotenv
+add to package.json, "scripts": {  "dev": "nodemon server-1.js"  }
+
+git init 
+add files .env, .gitignore (to .gitignore add: node_modules .env)
+git add .gitignore //stage and commit ,gitignore
+git commit -m "Add .gitignore"
+git add . //stage and commit remaining files
+git commit -m "Initial commit"
+
+Create a new repository on GitHub <new git repo>
+git remote add origin <new git repo>
+git push -u origin main
+
+#new practice - used in bash rm -rf .git, rm -f .gitattributes and then restarted vscode, moved files to previous-practice/xx
+
+
+# npm i -g degit // https://www.youtube.com/watch?v=xGp-YymMK2s
+
+# npx degit sveltejs/template rez-client
