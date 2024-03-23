@@ -4,7 +4,7 @@
   "description": "",
   "main": "server-api.js",
   "scripts": {
-    "start": "sirv public --no-clear"
+    "start": "node server-api.js"
   },
   "keywords": [],
   "author": "",
