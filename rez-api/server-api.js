@@ -13,7 +13,10 @@ const corsOptions = {
 }
 
 
-server.use(cors( corsOptions ));
+server.use(cors( {
+  origin: '*',
+  optionsSuccessStatus: 200
+} ));
 
 const connectDB = require('./connect-db.js')
 const oldRouter = require('./routes/oldRoutes.js')
