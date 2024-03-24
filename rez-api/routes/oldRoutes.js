@@ -34,8 +34,8 @@ router.get( '/:id', async (req, res)=>{
 } )
 
 //create one
-router.post( '/:myC', async (req, res)=>{ 
-    const data = new oldCols[req.params.myC]({
+router.post( '/', async (req, res)=>{ 
+    const data = new oldCols[collPick]({
         col_a: req.body.col_a, 
         col_b: req.body.col_b, 
         col_c: req.body.col_c, 
@@ -47,8 +47,9 @@ router.post( '/:myC', async (req, res)=>{
       })
     try{
         await data.save()
-        const myData = await oldCols[myC].find()
-        res.status(201).json( myData ) 
+        const myData = await oldCols[collPick].find()
+        //console.log ('my data is: ' + myData.length)
+        res.json( myData )
     }catch(err){
         res.status(400).json( {message: err.message}) // 400 bad user data
     }
