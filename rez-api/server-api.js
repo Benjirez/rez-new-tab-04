@@ -6,6 +6,8 @@ const server = express()
 const cors = require('cors'); 
 //const multer = require('multer')
 
+server.use(cors( ));
+
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
   // Request methods you wish to allow
@@ -19,7 +21,7 @@ app.use((req, res, next) => {
   next();
 });
 
-server.use(cors( ));
+
 
 const connectDB = require('./connect-db.js')
 const oldRouter = require('./routes/oldRoutes.js')
