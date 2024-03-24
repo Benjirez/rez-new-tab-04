@@ -35,7 +35,7 @@ router.get( '/:id', async (req, res)=>{
 
 //create one
 router.post( '/:myC', async (req, res)=>{ 
-    const data = new oldCols[req.paramd.myC]({
+    const data = new oldCols[req.params.myC]({
         col_a: req.body.col_a, 
         col_b: req.body.col_b, 
         col_c: req.body.col_c, 
