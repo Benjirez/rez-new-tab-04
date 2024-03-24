@@ -6,7 +6,14 @@ const server = express()
 const cors = require('cors'); 
 //const multer = require('multer')
 
-server.use(cors());
+// Configure CORS
+const corsOptions = {
+  origin: 'http://localhost:8080', // Replace with the origin you want to allow
+  optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+
+server.use(cors( corsOptions ));
 
 const connectDB = require('./connect-db.js')
 const oldRouter = require('./routes/oldRoutes.js')
