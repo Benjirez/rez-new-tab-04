@@ -6,17 +6,20 @@ const server = express()
 const cors = require('cors'); 
 //const multer = require('multer')
 
-// Configure CORS
-const corsOptions = {
-  origin: 'http://localhost:8080', // Replace with the origin you want to allow
-  optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
+  // Request methods you wish to allow
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  // Request headers you wish to allow
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  // Set to true if you need the website to include cookies in the requests sent
+  // to the API (e.g. in case you use sessions)
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  // Pass to next layer of middleware
+  next();
+});
 
-
-server.use(cors( {
-  origin: '*',
-  optionsSuccessStatus: 200
-} ));
+server.use(cors( ));
 
 const connectDB = require('./connect-db.js')
 const oldRouter = require('./routes/oldRoutes.js')
