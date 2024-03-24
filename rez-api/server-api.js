@@ -8,6 +8,7 @@ const cors = require('cors');
 
 server.use(cors( ));
 
+/*
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
   // Request methods you wish to allow
@@ -20,7 +21,7 @@ app.use((req, res, next) => {
   // Pass to next layer of middleware
   next();
 });
-
+*/
 
 
 const connectDB = require('./connect-db.js')
