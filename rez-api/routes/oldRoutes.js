@@ -25,7 +25,7 @@ router.get( '/:pick', async (req, res)=>{
 router.get( '/:id', async (req, res)=>{ 
 
     try{
-        const data = await Data.findById()
+        const data = await oldCols[collPick].findById()
         res.json( data )
     }catch(err){
         console.log('nope')
@@ -60,7 +60,7 @@ router.post( '/', async (req, res)=>{
 //patch one
 router.patch( '/:id', async (req, res)=>{ 
 
-    const data = await Data.findById( req.params.id )
+    const data = await oldCols[collPick].findById( req.params.id )
    if (req.body.title != null){ data.title = req.body.title }
     data.save()
     res.send( req.params.id )
