@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const oldCols= require('../models/OldCollections.js')
+const oldCols= require('../models/OldModels.js')
 //get all
 let collPick
 
