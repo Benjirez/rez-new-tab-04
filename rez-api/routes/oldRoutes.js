@@ -52,6 +52,7 @@ router.post( '/', async (req, res)=>{
         res.json( myData )
     }catch(err){
         res.status(400).json( {message: err.message}) // 400 bad user data
+        
     }
 } )
 
